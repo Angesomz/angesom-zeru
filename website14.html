@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angesom Zeru - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            padding: 1rem;
+            background: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #6a11cb;
+        }
+        .section {
+            padding: 2rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+        .about {
+            text-align: center;
+        }
+        .about img {
+            max-width: 40px;
+            border-radius: 75%;
+            margin-bottom: 1rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .project-card {
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card h3 {
+            margin: 0 0 0.5rem;
+        }
+        .project-card p {
+            margin: 0.5rem 0;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.75rem;
+            background: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Angesom Zeru</h1>
+        <p>Software Engineering Student | Mekelle University</p>
+    </header>
+    <nav>
+        <a href="#about" target="_blank">About</a>
+        <a href="#projects" target="_blank">Projects</a>
+        <a href="#skills" target="_blank">Skills</a>
+        <a href="#education" target="_bank">Education</a>
+        <a href="#contact" target="_blank">Contact</a>
+    </nav>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <img src="photo_2025-01-07_04-30-31.jpg" alt="Angesom Zeru">
+        <p>Highly motivated and dedicated third-year Software Engineering student at Mekelle University with a strong academic record and a concurrent distance degree in Accounting and Finance from Admass University proficient in multiple languages and technologies , with a passion for continous learning and professional development  experianced gym trainer with excellent social communication skills ,and a commitment to team work  and adaptablity to change.</p>
+    </div>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Grading System</h3>
+                <p>Developed a grading system application to manage and compute student grades efficiently using Python.</p>
+            </div>
+            <div class="project-card">
+                <h3>Gym Membership System</h3>
+                <p>Created a membership management system for gyms, including features for tracking member details, payment status, and attendance.</p>
+            </div>
+            <div class="project-card">
+                <h3>Animation Projects</h3>
+                <p>Designed and implemented various animations using Python, showcasing creative coding skills and understanding of animation principles.</p>
+            </div>
+        </div>
+    </div>
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, HTML, CSS</li>
+            <li>Software Tools: Visual Studio, Django, Flask, MySQL</li>
+            <li>Languages: Fluent in Tigrigna, Amharic, and English</li>
+        </ul>
+    </div>
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <p><b>Mekelle University:</b> B.Sc. in Software Engineering (Current GPA: 3.5, Expected Graduation: 2027)</p>
+        <p><b>Admass University:</b> B.A. in Accounting and Finance (Distance Learning, Current GPA: 3.6, Expected Graduation: 2027)</p>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: azeru411@gmail.com</p>
+        <p>Phone: +251936372916</p>
+        <p>id number: ugr/172186/12</p>
+        <p>Location: Mekelle, Ethiopia</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 Angesom Zeru. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
